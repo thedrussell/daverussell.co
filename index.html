@@ -3,16 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Dave Russell</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 1.25rem;
+        }
+        .container {
+            max-width: 37.5rem;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            text-align: left;
+            margin-bottom: 0.625rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        h2 {
+            color: #333;
+            text-align: left;
+            margin-bottom: 1.25rem;
+            font-size: 1.125rem;
+            font-weight: normal;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+        }
+        .links a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1rem;
+            line-height: 1.4;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #004080;
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body class="flex flex-col justify-center min-h-screen bg-gray-100 p-5">
-    <div class="max-w-xl mx-auto w-full">
-        <h1 class="text-lg sm:text-2xl md:text-2xl text-gray-800 font-bold mb-2">Dave Russell</h1>
-        <h2 class="text-base sm:text-2lg text-gray-800 mb-5">Freelance designer, strategic thinker and proud generalist</h2>
-        <h2 class="text-base sm:text-2lg text-gray-800 mb-5">I make things for people to use, experience and enjoy.</h2>
-        <div class="flex flex-col space-y-3">
-            <a href="https://www.linkedin.com/in/dave-russell-4840a025/" class="text-blue-600 hover:text-blue-800 hover:underline">LinkedIn</a>
-            <a href="https://www.are.na/dave-russell/" class="text-blue-600 hover:text-blue-800 hover:underline">Are.na</a>
+<body>
+    <div class="container">
+        <h1>Dave Russell</h1>
+        <h2>Freelance designer, strategic thinker and proud generalist</h2>
+        <h2>I make things for people to use, experience and enjoy.</h2>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/dave-russell-4840a025/">LinkedIn</a>
+            <a href="https://www.are.na/dave-russell/">Are.na</a>
         </div>
     </div>
 </body>
