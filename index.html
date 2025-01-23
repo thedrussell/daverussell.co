@@ -2,14 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>daverussell.co</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Simple Website</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #004080;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <main>
+    <div class="container">
         <h1>Dave Russell</h1>
         <h1>Freelance designer, strategic thinker and proud generalist<h1>
         <h1>I make things for people to use, experience and enjoy.<h1>
-    </main>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/dave-russell-4840a025/">LinkedIn</a>
+            <a href="https://www.are.na/dave-russell/">Are.na</a>
+        </div>
+    </div>
 </body>
 </html>
